@@ -86,7 +86,7 @@ def page(language, body):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=ROOT / "site" / "privacy")
+    parser.add_argument("--output", type=Path, default=ROOT)
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     for language in ("ko", "en"):
@@ -98,6 +98,7 @@ def main():
     shutil.copyfile(ROOT / "site" / "privacy.css", args.output / "privacy.css")
     shutil.copyfile(ROOT / "extension" / "icons" / "icon128.png", args.output / "icon.png")
     (args.output / "index.html").write_text('<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=privacy.html"><link rel="canonical" href="' + BASE + 'privacy.html"><title>YouTube Comment Block · 개인정보처리방침</title></head><body><a href="privacy.html">개인정보처리방침 / Privacy Policy</a></body></html>\n')
+    (args.output / ".nojekyll").write_text("")
     print(args.output)
 
 

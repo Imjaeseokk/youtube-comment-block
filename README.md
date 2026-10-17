@@ -85,8 +85,8 @@ npm run package
 - `assets/`: 아이콘 후보 원본·PNG 내보내기와 스토어 이미지
 - `release/`: 제출용 ZIP, 자료 묶음 및 SHA-256 체크섬
 
-GitHub 저장소: [Imjaeseokk/youtube-comment-block](https://github.com/Imjaeseokk/youtube-comment-block) (비공개). 소스·문서·에셋·제출 ZIP을 함께 관리합니다.
+GitHub 저장소: [Imjaeseokk/youtube-comment-block](https://github.com/Imjaeseokk/youtube-comment-block) (공개). 소스·문서·에셋·제출 ZIP을 함께 관리합니다.
 
 ## 개인정보처리방침 배포
 
-원본은 `docs/store/privacy-policy.ko.md`, `privacy-policy.en.md`이며 `python3 scripts/build-privacy-pages.py`로 스크립트·외부 폰트 없는 공개 HTML을 생성합니다. `site/privacy/`의 파일만 별도 공개 저장소 `Imjaeseokk/Imjaeseokk.github.io`의 `youtube-comment-block/` 경로에 배포합니다. 배포 절차는 [GitHub Pages 기록](docs/store/github-pages.md)에 있습니다.
+원본은 `docs/store/privacy-policy.ko.md`, `privacy-policy.en.md`이며 `python3 scripts/build-privacy-pages.py`로 스크립트·외부 폰트 없는 공개 HTML을 생성합니다. 이 저장소 루트의 `privacy.html`, `privacy-en.html`, `privacy.css`, `icon.png`, `index.html`, `.nojekyll`을 GitHub Pages로 제공합니다. Pages 소스는 이 저장소의 `main` 브랜치, `/ (root)`입니다. 배포 절차는 [GitHub Pages 기록](docs/store/github-pages.md)에 있습니다.

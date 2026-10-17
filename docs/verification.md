@@ -14,7 +14,7 @@
 
 ## 개인정보처리방침 배포 확인 (2026-10-17)
 
-GitHub Pages 실행 `39022764377`이 성공했다. 한국어·영어 정책, CSS, 아이콘, 진입 페이지의 HTTPS 응답은 모두 HTTP 200이며 배포 원본과 바이트 단위로 일치했다. 실제 공개 페이지에서 로그인 없이 한국어·영어 전환을 확인했다. 배포 내역은 `docs/store/github-pages.md`, 화면은 `docs/store/privacy-page-preview.jpg`에 기록했다.
+정책 배포 위치를 공개 `Imjaeseokk/youtube-comment-block` 저장소로 정정했다. 생성 HTML·CSS·아이콘·진입 페이지는 루트에 있으며, GitHub Pages 소스는 `main`의 `/ (root)`이다. `.nojekyll`로 정적 파일을 그대로 제공한다. 배포 내역은 `docs/store/github-pages.md`에 기록한다.
 
 ## 설치 후 확인할 항목
 
