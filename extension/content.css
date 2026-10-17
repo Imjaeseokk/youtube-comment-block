@@ -1,0 +1,69 @@
+/* Installed before the page DOM is constructed: never paint comments before consent. */
+html:not([data-ycb-state="open"]) ytd-watch-flexy ytd-comments,
+html:not([data-ycb-state="open"]) ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-comments-section"] #content {
+  display: none !important;
+}
+
+.ycb-gate {
+  --ycb-text: var(--yt-spec-text-primary, #0f0f0f);
+  --ycb-muted: var(--yt-spec-text-secondary, #606060);
+  --ycb-surface: var(--yt-spec-badge-chip-background, rgba(0, 0, 0, .05));
+  --ycb-line: var(--yt-spec-10-percent-layer, rgba(0, 0, 0, .1));
+  --ycb-base: var(--yt-spec-base-background, #fff);
+  color: var(--ycb-text);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 24px 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: start;
+}
+html[dark] .ycb-gate {
+  --ycb-text: var(--yt-spec-text-primary, #f1f1f1);
+  --ycb-muted: var(--yt-spec-text-secondary, #aaa);
+  --ycb-surface: var(--yt-spec-badge-chip-background, rgba(255, 255, 255, .08));
+  --ycb-line: var(--yt-spec-10-percent-layer, rgba(255, 255, 255, .15));
+  --ycb-base: var(--yt-spec-base-background, #0f0f0f);
+}
+.ycb-gate *, .ycb-gate *::before, .ycb-gate *::after { box-sizing: border-box; }
+.ycb-gate .ycb-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.ycb-gate h2 { margin: 0; font-size: 20px; font-weight: 700; line-height: 1.4; }
+.ycb-gate .ycb-badge { display: inline-flex; align-items: center; gap: 5px; color: var(--ycb-muted); font-size: 12px; }
+.ycb-gate svg { width: 18px; height: 18px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.ycb-gate .ycb-card { border: 1px solid var(--ycb-line); border-radius: 12px; padding: 24px; }
+.ycb-gate .ycb-question { margin: 0 0 6px; font-size: 18px; font-weight: 600; }
+.ycb-gate p { margin: 0; }
+.ycb-gate .ycb-subtitle { color: var(--ycb-muted); }
+.ycb-gate .ycb-insight { margin-top: 20px; padding: 16px 18px; background: var(--ycb-surface); border-radius: 8px; }
+.ycb-gate .ycb-eyebrow { font-size: 12px; color: var(--ycb-muted); margin-bottom: 6px; }
+.ycb-gate .ycb-insight-title { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.ycb-gate .ycb-insight-body { color: var(--ycb-muted); font-size: 13px; line-height: 1.65; }
+.ycb-gate details { margin-top: 12px; font-size: 12px; color: var(--ycb-muted); }
+.ycb-gate summary { cursor: pointer; width: fit-content; padding: 3px 0; }
+.ycb-gate .ycb-study { padding-top: 10px; display: grid; gap: 8px; line-height: 1.65; }
+.ycb-gate .ycb-citation { color: var(--ycb-text); }
+.ycb-gate a { color: var(--yt-spec-call-to-action, #065fd4); text-decoration: none; }
+html[dark] .ycb-gate a { color: var(--yt-spec-call-to-action, #3ea6ff); }
+.ycb-gate a:hover { text-decoration: underline; }
+.ycb-gate .ycb-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 20px; }
+.ycb-gate button {
+  appearance: none; font: inherit; font-size: 14px; font-weight: 500; line-height: 20px;
+  border: 1px solid var(--ycb-line); border-radius: 999px; padding: 8px 16px;
+  color: var(--ycb-text); background: transparent; cursor: pointer; min-height: 36px;
+}
+.ycb-gate button:hover { background: var(--ycb-surface); }
+.ycb-gate button.ycb-primary { background: var(--ycb-text); color: var(--ycb-base); border-color: transparent; }
+.ycb-gate button.ycb-primary:hover { opacity: .86; }
+.ycb-gate button:focus-visible, .ycb-gate summary:focus-visible, .ycb-gate a:focus-visible { outline: 2px solid var(--yt-spec-call-to-action, #065fd4); outline-offset: 4px; }
+.ycb-gate .ycb-compact { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding: 14px 16px; border: 1px solid var(--ycb-line); border-radius: 12px; }
+.ycb-gate .ycb-compact-copy { flex: 1; min-width: 180px; }
+.ycb-gate .ycb-compact-copy strong { font-size: 14px; font-weight: 500; }
+.ycb-gate .ycb-compact-copy p { font-size: 12px; color: var(--ycb-muted); margin-top: 2px; }
+.ycb-gate[data-placement="panel"] { padding: 0 16px; margin: 16px 0; }
+.ycb-gate[data-placement="panel"] .ycb-card { padding: 16px; }
+@media (max-width: 600px) {
+  .ycb-gate .ycb-card { padding: 18px; }
+  .ycb-gate .ycb-actions { align-items: stretch; }
+  .ycb-gate .ycb-actions button { flex: 1; white-space: nowrap; padding-inline: 12px; }
+}

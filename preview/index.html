@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>댓글 잠시 멈춤 · 로컬 미리보기</title>
+  <link rel="stylesheet" href="/preview/preview.css"><link rel="stylesheet" href="/extension/content.css">
+  <script src="/preview/route.js"></script>
+  <script src="/extension/insights.js"></script><script src="/extension/content.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand"><span class="menu" aria-hidden="true">☰</span><span class="youtube-mark" aria-hidden="true">▶</span><strong>YouTube</strong><sup>KR</sup></div>
+    <div class="search" aria-hidden="true">검색<span>⌕</span></div>
+    <div class="avatar">J</div>
+  </header>
+  <div class="preview-tools" aria-label="미리보기 설정">
+    <span><i></i> 확장 프로그램 미리보기</span>
+    <button id="theme" type="button">어두운 테마</button>
+    <button id="next" type="button">다음 영상</button>
+    <button id="panel" type="button">측면 댓글</button>
+    <button id="language" type="button">English</button>
+  </div>
+  <main>
+    <ytd-watch-flexy>
+      <div class="watch-layout">
+        <div id="primary">
+          <div class="video" role="img" aria-label="느긋한 주말을 표현한 영상 대체 이미지">
+            <div class="room-window"><div></div></div><div class="sunlight"></div>
+            <div class="poster"><span>A LITTLE ROOM<br>FOR YOURSELF.</span><small>나의 속도로 보내는 하루</small></div>
+            <div class="plant"><span></span><span></span><span></span><span></span><div></div></div>
+            <div class="table"><div class="cup"></div><div class="book"></div></div>
+            <div class="video-controls"><div class="progress"></div><span>Ⅱ</span><span>◀▶</span><span>♬</span><small>4:28 / 12:06</small><span class="control-right">⚙　□</span></div>
+          </div>
+          <h1>생각이 쉬어가는 시간 | 조용한 주말의 기록</h1>
+          <div class="channel-row"><div class="channel-avatar">m</div><div class="channel"><strong>느린 일상</strong><small>구독자 12.4만명</small></div><span class="subscribe">구독</span><div class="video-actions"><span>♡　1.2천　│　♧</span><span>↗ 공유</span><span>···</span></div></div>
+          <div class="description"><strong>조회수 32,410회　 3일 전</strong><p>잠깐 멈춰도 괜찮은 하루. 오늘은 내 생각에 조금 더 귀 기울여 봅니다.</p><strong>더보기</strong></div>
+          <div id="below"><ytd-comments id="comments"><h2>댓글 128개</h2><p class="add-comment">댓글 추가...</p><article><div class="comment-avatar">S</div><div><strong>@slow-morning <small>2일 전</small></strong><p>이렇게 느긋하게 보내는 시간도 필요하네요. 영상을 보고 나서 제 생각을 먼저 정리해 봤어요.</p><small>♡ 24　　답글</small></div></article><article><div class="comment-avatar second">H</div><div><strong>@home-notes <small>1일 전</small></strong><p>주말 아침에 어울리는 영상이에요.</p><small>♡ 12　　답글</small></div></article></ytd-comments></div>
+        </div>
+        <aside>
+          <div class="recommend-label"><span>모두</span><span>관련 콘텐츠</span><span>최근에 업로드된 동영상</span></div>
+          <div class="recommend"><div class="thumbnail thumb-one"><span>slow<br>morning</span></div><div><strong>아무것도 서두르지 않는 아침</strong><small>느린 일상<br>조회수 5.2만회 · 1주 전</small></div></div>
+          <div class="recommend"><div class="thumbnail thumb-two"><span>less,<br>but better.</span></div><div><strong>작은 공간, 충분한 하루</strong><small>일상의 조각<br>조회수 2.8만회 · 4일 전</small></div></div>
+          <div class="recommend"><div class="thumbnail thumb-three"><span>잠깐의<br>산책</span></div><div><strong>생각을 비우러 걸었습니다</strong><small>걷는 사람<br>조회수 8.1만회 · 2주 전</small></div></div>
+          <ytd-engagement-panel-section-list-renderer target-id="engagement-panel-comments-section" hidden><h2>댓글</h2><div id="content"><p>측면 패널의 댓글도 동의한 뒤 표시됩니다.</p></div></ytd-engagement-panel-section-list-renderer>
+          <p class="fixture-note">이 화면은 유튜브 레이아웃을 재현한 로컬 샘플입니다. 실제 확장 프로그램의 코드로 댓글 선택을 체험할 수 있습니다.</p>
+        </aside>
+      </div>
+    </ytd-watch-flexy>
+  </main>
+  <script src="/preview/preview.js"></script>
+  <p class="demo-label">기능 시연용 로컬 샘플 · 실제 확장 프로그램 코드</p>
+</body>
+</html>

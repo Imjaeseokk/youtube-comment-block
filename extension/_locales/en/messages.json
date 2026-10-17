@@ -1,0 +1,5 @@
+{
+  "extensionName": { "message": "YouTube Comment Block · Pause Before Comments" },
+  "extensionDescription": { "message": "Hide YouTube comments until you choose to see them. Pause with a reflection prompt or research insight before opening comments." },
+  "actionTitle": { "message": "Pause Before Comments" }
+}

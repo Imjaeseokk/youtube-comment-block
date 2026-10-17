@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "default_locale": "ko",
+  "version": "0.1.0",
+  "description": "__MSG_extensionDescription__",
+  "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "action": {
+    "default_title": "__MSG_actionTitle__",
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png" }
+  },
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*"],
+    "css": ["content.css"],
+    "js": ["insights.js", "content.js"],
+    "run_at": "document_start"
+  }]
+}

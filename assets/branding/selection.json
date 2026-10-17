@@ -1,0 +1,42 @@
+{
+  "selected": "01",
+  "provisional": true,
+  "bubbleScale": 0.9,
+  "prohibitionStrokeMultiplier": 1.35,
+  "palette": [
+    "#000000",
+    "#FFFFFF",
+    "#FF0033"
+  ],
+  "method": "SVG geometry; no image generation model",
+  "candidates": [
+    {
+      "id": "01",
+      "name": "Classic outline"
+    },
+    {
+      "id": "02",
+      "name": "Solid / corner badge"
+    },
+    {
+      "id": "03",
+      "name": "Wide / upper badge"
+    },
+    {
+      "id": "04",
+      "name": "Centered prohibition"
+    },
+    {
+      "id": "05",
+      "name": "Soft round / lower badge"
+    }
+  ],
+  "constraints": [
+    "transparent outside the speech bubble",
+    "three unequal horizontal comment lines",
+    "upright",
+    "no shadows",
+    "no gradients",
+    "red circle with diagonal prohibition bar"
+  ]
+}

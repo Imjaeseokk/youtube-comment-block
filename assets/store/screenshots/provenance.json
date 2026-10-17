@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-17",
+  "source": "http://127.0.0.1:4173/watch?v=example-video",
+  "sourceType": "Local fixture running actual extension content scripts, visibly labeled as a sample",
+  "captureMethod": "Codex in-app browser screenshot API via cua_repl",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "normalization": "Browser API returned 1265×791 complete-frame captures; resized to exact 1280×800 and converted to opaque RGB PNG. No UI/content was added, removed or retouched.",
+  "notEvidenceOf": "An installed extension running on live youtube.com",
+  "captures": [
+    {
+      "file": "01-choice-light.png",
+      "capturedWidth": 1265,
+      "capturedHeight": 791,
+      "outputWidth": 1280,
+      "outputHeight": 800,
+      "format": "RGB PNG"
+    },
+    {
+      "file": "02-research-source.png",
+      "capturedWidth": 1265,
+      "capturedHeight": 791,
+      "outputWidth": 1280,
+      "outputHeight": 800,
+      "format": "RGB PNG"
+    },
+    {
+      "file": "03-focus.png",
+      "capturedWidth": 1265,
+      "capturedHeight": 791,
+      "outputWidth": 1280,
+      "outputHeight": 800,
+      "format": "RGB PNG"
+    },
+    {
+      "file": "04-comments-open.png",
+      "capturedWidth": 1265,
+      "capturedHeight": 791,
+      "outputWidth": 1280,
+      "outputHeight": 800,
+      "format": "RGB PNG"
+    },
+    {
+      "file": "05-choice-dark.png",
+      "capturedWidth": 1280,
+      "capturedHeight": 800,
+      "outputWidth": 1280,
+      "outputHeight": 800,
+      "format": "RGB PNG"
+    },
+    {
+      "file": "en/01-choice-light.png",
+      "capturedWidth": 1265,
+      "capturedHeight": 791,
+      "outputWidth": 1280,
+      "outputHeight": 800,
+      "format": "RGB PNG"
+    }
+  ]
+}

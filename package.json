@@ -1,0 +1,17 @@
+{
+  "name": "youtube-comment-block",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A deliberate pause before opening YouTube comments.",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "check": "node --check extension/content.js && node --check extension/insights.js && node --check extension/popup.js && node --check preview/preview.js && node --check scripts/build-assets.cjs && node --check scripts/verify-assets.cjs",
+    "preview": "python3 scripts/preview.py",
+    "package": "python3 scripts/package.py",
+    "assets": "node scripts/build-assets.cjs",
+    "assets:check": "node scripts/verify-assets.cjs",
+    "screenshots:normalize": "node scripts/normalize-screenshots.cjs"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": { "jsdom": "26.1.0", "sharp": "0.35.5" }
+}
