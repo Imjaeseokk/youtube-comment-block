@@ -13,7 +13,7 @@ Chrome 웹 스토어 개인정보처리방침 URL에는 한국어 주소를 입�
 - Pages: **Deploy from a branch → main → / (root)**.
 - 배포 파일: 이 저장소 루트의 `privacy.html`, `privacy-en.html`, `privacy.css`, `icon.png`, `index.html`, `.nojekyll`.
 - `.nojekyll`은 생성한 정적 파일을 Jekyll 변환 없이 그대로 제공한다.
-- 개인 블로그 저장소에 잘못 추가했던 정책 파일은 제거한다. 정책은 이 프로젝트 저장소에서 관리·배포한다.
+- 개인 블로그 저장소에 잘못 추가했던 정책 파일은 제거했다. 정책은 이 프로젝트 저장소에서 관리·배포한다.
 
 ## 수정과 재배포
 
@@ -33,3 +33,10 @@ Jaeseok Heo (Imjaeseokk), `kakaokokoa9971@gmail.com`.
 ## 배포 위치 정정 (2026-10-17)
 
 이전에 개인 블로그에 배포했던 구성을 이 프로젝트 저장소로 옮겼다. 공개 정책 URL의 경로는 그대로 유지한다. 기존 `site/privacy/`의 생성물은 루트로 이동했으며 생성 스크립트의 기본 출력 경로도 루트로 변경했다.
+
+## 배포 확인 결과
+
+- 이 저장소의 [Pages 실행 39023583640](https://github.com/Imjaeseokk/youtube-comment-block/actions/runs/39023583640)이 성공했다. 배포 커밋: `5dc837fdab35c0ca579667f286747cce0ab9f124`.
+- 한국어·영어 정책, CSS, 아이콘, 진입 페이지의 HTTPS 응답은 모두 HTTP 200이며, 본문은 이 저장소 루트의 파일과 바이트 단위로 일치했다.
+- 브라우저에서 로그인 없이 한국어 → English → 한국어 전환을 확인했다. 화면: `docs/store/privacy-page-preview.jpg`.
+- 개인 블로그의 정책 파일 다섯 개는 [정리 PR](https://github.com/Imjaeseokk/Imjaeseokk.github.io/pull/3)로 제거했다. 다른 블로그 파일은 변경하지 않았다.

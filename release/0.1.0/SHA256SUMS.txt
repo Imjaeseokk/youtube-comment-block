@@ -1,2 +1,2 @@
 c5a6ef1290beec8e2be5a5733c00c280a857d807f58adb549d630685c51fd5b3  youtube-comment-block-0.1.0.zip
-f8af313dd26d7547725a04bc5147d717b30ac71269037c8bc9dbc0ada20cee34  youtube-comment-block-store-kit-0.1.0.zip
+68ffffa88cbb6987d72a2064d6a2a69a536d0c88fea1f4d7bb164558c5d4e026  youtube-comment-block-store-kit-0.1.0.zip
