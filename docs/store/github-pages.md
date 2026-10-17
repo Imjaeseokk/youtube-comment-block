@@ -40,7 +40,7 @@ Jaeseok Heo (Imjaeseokk), `kakaokokoa9971@gmail.com`. 기존 공개 Pages 저장
 - GitHub Pages 실행 [39022764377](https://github.com/Imjaeseokk/Imjaeseokk.github.io/actions/runs/39022764377)이 성공했고, Pages API가 위 배포 커밋을 `built`로 확인했다.
 - 한국어·영어 HTML, CSS, 아이콘, 진입 페이지 다섯 URL의 HTTPS 응답이 모두 HTTP 200이며, 응답 본문은 생성한 파일과 바이트 단위로 일치했다.
 - 로그인 없이 공개 페이지를 열고 한국어 → English → 한국어 링크 전환을 확인했다.
-- 공개 페이지 화면: `docs/store/privacy-page-preview.jpg`.
+- 최초 배포 당시 공개 페이지 화면: `docs/store/privacy-page-preview.jpg` (제품명 정리 전 기록).
 
 ## 제품명 정리 (2026-10-17)
 
@@ -49,3 +49,5 @@ Jaeseok Heo (Imjaeseokk), `kakaokokoa9971@gmail.com`. 기존 공개 Pages 저장
 - 변경 PR: https://github.com/Imjaeseokk/Imjaeseokk.github.io/pull/2
 - 배포 커밋: `b13e4e92621242a2f9a85f1b92706663968a791f`.
 - Pages 실행: https://github.com/Imjaeseokk/Imjaeseokk.github.io/actions/runs/39022978502
+
+빌드와 배포 단계는 성공했으며, 내려받은 배포 산출물의 한국어·영어 HTML이 생성 원본과 일치함을 확인했다. 이후 공개 정책 경로는 HTTP 404를 반환했다. 배포 단계 재실행과 새 Pages 빌드 [39023364108](https://github.com/Imjaeseokk/Imjaeseokk.github.io/actions/runs/39023364108) 성공 후에도 같은 상태여서, 공개 주소의 재접속 확인이 남아 있다. 기존 사이트의 홈은 HTTP 200이다. 이 항목은 원격 배포 상태의 제한이며 패키지 ZIP의 제품명 변경은 완료됐다.
