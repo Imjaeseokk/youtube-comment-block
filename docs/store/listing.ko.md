@@ -1,4 +1,4 @@
-# YouTube Comment Block · 댓글 잠시 멈춤
+# YouTube Comment Block
 
 ## 짧은 설명
 

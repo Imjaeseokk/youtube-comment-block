@@ -1,4 +1,4 @@
-# YouTube Comment Block · Pause Before Comments
+# YouTube Comment Block
 
 ## Short description
 

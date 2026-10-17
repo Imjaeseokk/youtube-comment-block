@@ -1,4 +1,4 @@
-# YouTube Comment Block · 댓글 잠시 멈춤
+# YouTube Comment Block
 
 **영상 먼저. 내 생각 먼저.**
 

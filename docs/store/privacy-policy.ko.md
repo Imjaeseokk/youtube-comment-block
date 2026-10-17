@@ -5,7 +5,7 @@
 
 ## 1. 목적과 운영자
 
-YouTube Comment Block · 댓글 잠시 멈춤은 유튜브 댓글을 기본으로 가리고 사용자가 현재 영상에서 명시적으로 선택할 때 표시하는 독립적인 브라우저 확장 프로그램입니다. 운영자는 `Jaeseok Heo (Imjaeseokk)`이며 YouTube 또는 Google과 제휴·승인 관계가 없습니다.
+YouTube Comment Block은 유튜브 댓글을 기본으로 가리고 사용자가 현재 영상에서 명시적으로 선택할 때 표시하는 독립적인 브라우저 확장 프로그램입니다. 운영자는 `Jaeseok Heo (Imjaeseokk)`이며 YouTube 또는 Google과 제휴·승인 관계가 없습니다.
 
 ## 2. 기기에서 일시적으로 처리하는 정보
 

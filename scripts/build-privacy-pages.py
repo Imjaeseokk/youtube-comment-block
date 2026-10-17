@@ -74,7 +74,7 @@ def page(language, body):
 <a class="skip" href="#main">{skip}</a>
 <header><a class="brand" href="privacy.html"><img src="icon.png" width="40" height="40" alt=""><span>YouTube Comment Block</span></a>
 <nav aria-label="Language"><a href="privacy.html" lang="ko"{' aria-current="page"' if ko else ''}>한국어</a><a href="privacy-en.html" lang="en"{'' if ko else ' aria-current="page"'}>English</a></nav></header>
-<main id="main"><div class="intro"><p class="eyebrow">{'댓글 잠시 멈춤' if ko else 'Pause Before Comments'}</p><h1>{title}</h1><p class="summary">{summary}</p><p class="date">{date}</p></div>
+<main id="main"><div class="intro"><p class="eyebrow">YouTube Comment Block</p><h1>{title}</h1><p class="summary">{summary}</p><p class="date">{date}</p></div>
 <aside class="facts"><span>{'기기 내 일시 처리' if ko else 'Temporary on-device processing'}</span><span>{'개발자 서버 전송 없음' if ko else 'No developer-server transmission'}</span><span>{'확장 프로그램 분석 도구 없음' if ko else 'No extension analytics'}</span></aside>
 <article>{body}</article>
 <section class="contact"><h2>{'문의' if ko else 'Contact'}</h2><p>Jaeseok Heo (Imjaeseokk)<br><a href="mailto:{CONTACT}">{CONTACT}</a></p></section>
