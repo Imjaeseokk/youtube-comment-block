@@ -20,6 +20,6 @@ Screenshots are browser captures of the local demonstration fixture running the 
 
 The five icon candidates have transparent backgrounds, no shadows, no rotation and exactly three unequal horizontal comment lines. They use black, white and #FF0033. Promotion tiles and UI captures are opaque canvases for their store slots; their canvases are separate from the transparent icon artwork.
 
-Candidate 01 is provisionally applied to the extension and store assets. Use `npm run assets -- 05` (01–05) to switch, then run `npm run assets:check` and `npm run package`. The canonical SVGs and all export sizes are in `assets/branding/candidates/`. The gallery’s checkerboard is a transparency preview and is not part of the icon files.
+Candidate 04 was selected by the user and is applied to the extension and store assets. Its bubble is about 13% smaller than the previous draft and its prohibition strokes increased from 34 to 38 units (about 12% thicker). Use `npm run assets -- 05` (01–05) to switch, then run `npm run assets:check` and `npm run package`. The canonical SVGs and all export sizes are in `assets/branding/candidates/`. The gallery’s checkerboard is a transparency preview and is not part of the icon files.
 
 Registration answers: `docs/store/submission.ko.md`. Full source ZIPs and the submission kit are generated under `release/0.1.0/`. These files have not been uploaded to the Chrome Web Store.

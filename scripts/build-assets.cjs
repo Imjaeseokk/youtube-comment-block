@@ -7,15 +7,15 @@ const red = "#FF0033";
 const svg = inner => `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">${inner}</svg>`;
 const bubble = (d, fill = "#FFFFFF", width = 22, edge = "#000000") => `<path data-role="bubble" d="${d}" fill="${fill}" stroke="${edge}" stroke-width="${width}" stroke-linejoin="round"/>`;
 const lines = (x, y, widths, gap, color, width) => widths.map((length, i) => `<path data-role="comment-line" d="M${x} ${y + i * gap}h${length}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round"/>`).join("");
-const ban = (x, y, radius, width) => {
+const ban = (x, y, radius, width, multiplier = 1.35) => {
   const end = +(radius * Math.SQRT1_2).toFixed(3);
-  return `<g data-role="prohibition" fill="none" stroke="${red}" stroke-width="${Math.round(width * 1.35)}" stroke-linecap="round"><circle cx="${x}" cy="${y}" r="${radius}"/><path d="M${x-end} ${y-end}L${x+end} ${y+end}"/></g>`;
+  return `<g data-role="prohibition" fill="none" stroke="${red}" stroke-width="${Math.round(width * multiplier)}" stroke-linecap="round"><circle cx="${x}" cy="${y}" r="${radius}"/><path d="M${x-end} ${y-end}L${x+end} ${y+end}"/></g>`;
 };
 const candidates = [
   { id: "01", name: "Classic outline", body: bubble("M120 118H354Q402 118 402 166V326Q402 374 354 374H188L112 434V374Q62 374 62 324V168Q62 118 120 118Z") + lines(119, 186, [210, 160, 110], 55, "#000000", 20) + ban(367, 130, 86, 25) },
   { id: "02", name: "Solid / corner badge", body: bubble("M130 92H358Q414 92 414 148V316Q414 372 358 372H188L110 430V372Q58 372 58 316V148Q58 92 130 92Z", "#000000", 12, "#FFFFFF") + lines(118, 164, [220, 174, 122], 55, "#FFFFFF", 23) + ban(378, 356, 85, 26) },
   { id: "03", name: "Wide / upper badge", body: bubble("M98 136H362Q422 136 422 196V292Q422 352 362 352H188L118 410V352H98Q38 352 38 292V196Q38 136 98 136Z", "#FFFFFF", 20) + lines(94, 194, [166, 232, 122], 50, "#000000", 18) + ban(393, 123, 77, 23) },
-  { id: "04", name: "Centered prohibition", body: bubble("M146 108H366Q410 108 410 152V322Q410 366 366 366H332V424L260 366H146Q102 366 102 322V152Q102 108 146 108Z", "#000000", 10, "#FFFFFF") + lines(152, 178, [202, 151, 104], 57, "#FFFFFF", 22) + ban(256, 248, 184, 25) },
+  { id: "04", name: "Centered prohibition", commentScale: .78, prohibitionStrokeMultiplier: 1.52, body: bubble("M146 108H366Q410 108 410 152V322Q410 366 366 366H332V424L260 366H146Q102 366 102 322V152Q102 108 146 108Z", "#000000", 10, "#FFFFFF") + lines(152, 178, [202, 151, 104], 57, "#FFFFFF", 22) + ban(256, 248, 184, 25, 1.52) },
   { id: "05", name: "Soft round / lower badge", body: bubble("M172 80H330Q430 80 430 180V272Q430 372 330 372H218L140 430V366Q70 348 70 272V180Q70 80 172 80Z", "#FFFFFF", 23) + lines(139, 162, [211, 165, 113], 54, "#000000", 21) + ban(382, 350, 84, 24) }
 ];
 async function fitIcon(source, size) {
@@ -33,18 +33,22 @@ async function main() {
   await fs.mkdir(path.join(store, "promotional"), { recursive: true });
   for (const item of candidates) {
     const split = item.body.indexOf('<g data-role="prohibition"');
-    const source = svg(`<g data-role="comment" transform="translate(25.6 25.6) scale(0.9)">${item.body.slice(0,split)}</g>${item.body.slice(split)}`);
+    const scale = item.commentScale ?? .9;
+    const offset = +(256 * (1 - scale)).toFixed(3);
+    const source = svg(`<g data-role="comment" transform="translate(${offset} ${offset}) scale(${scale})">${item.body.slice(0,split)}</g>${item.body.slice(split)}`);
     const dest = path.join(branding, "candidates", `candidate-${item.id}`);
     await fs.mkdir(dest, { recursive: true });
     await fs.writeFile(path.join(dest, "icon.svg"), source + "\n");
     for (const size of [16, 32, 48, 128, 256, 512, 1024]) await fs.writeFile(path.join(dest, `icon-${size}.png`), await fitIcon(source, size));
   }
-  const selected = process.argv[2] || "01";
+  const previous = await fs.readFile(path.join(branding, "selection.json"), "utf8").then(JSON.parse).catch(() => null);
+  const selected = process.argv[2] || previous?.selected || "04";
   if (!candidates.some(item => item.id === selected)) throw new Error("Choose candidate 01, 02, 03, 04 or 05");
   await fs.copyFile(path.join(branding, "candidates", `candidate-${selected}`, "icon.svg"), path.join(branding, "selected.svg"));
   for (const size of [16, 32, 48, 128]) await fs.copyFile(path.join(branding, "candidates", `candidate-${selected}`, `icon-${size}.png`), path.join(root, "extension/icons", `icon${size}.png`));
   await fs.copyFile(path.join(root, "extension/icons/icon128.png"), path.join(store, "store-icon-128.png"));
-  const selection = { selected, provisional: true, bubbleScale: .9, prohibitionStrokeMultiplier: 1.35, palette: ["#000000", "#FFFFFF", red], method: "SVG geometry; no image generation model", candidates: candidates.map(({id, name}) => ({id, name})), constraints: ["transparent outside the speech bubble", "three unequal horizontal comment lines", "upright", "no shadows", "no gradients", "red circle with diagonal prohibition bar"] };
+  const chosen = candidates.find(item => item.id === selected);
+  const selection = { selected, provisional: false, bubbleScale: chosen.commentScale ?? .9, prohibitionStrokeMultiplier: chosen.prohibitionStrokeMultiplier ?? 1.35, palette: ["#000000", "#FFFFFF", red], method: "SVG geometry; no image generation model", candidates: candidates.map(({id, name}) => ({id, name})), constraints: ["transparent outside the speech bubble", "three unequal horizontal comment lines", "upright", "no shadows", "no gradients", "red circle with diagonal prohibition bar"] };
   await fs.writeFile(path.join(branding, "selection.json"), JSON.stringify(selection, null, 2) + "\n");
   const entries = [];
   for (const [i, item] of candidates.entries()) {

@@ -33,6 +33,13 @@ async function main() {
     for (const size of [16,32,48,128,256,512,1024]) await png(`${base}/icon-${size}.png`,size,size,true);
   }
   for (const size of [16,32,48,128]) await png(`extension/icons/icon${size}.png`,size,size,true);
+  const selection=JSON.parse(await fs.readFile(path.join(root,"assets/branding/selection.json")));
+  for (const size of [16,32,48,128]) {
+    const chosen=await fs.readFile(path.join(root,`assets/branding/candidates/candidate-${selection.selected}/icon-${size}.png`));
+    const installed=await fs.readFile(path.join(root,`extension/icons/icon${size}.png`));
+    assert.ok(chosen.equals(installed),`Installed ${size}px icon matches selected candidate`);
+  }
+  assert.ok((await fs.readFile(path.join(root,"assets/store/store-icon-128.png"))).equals(await fs.readFile(path.join(root,"extension/icons/icon128.png"))),"Store icon matches installed icon");
   await png("assets/store/store-icon-128.png",128,128,true);
   await png("assets/store/promotional/small-440x280.png",440,280,false);
   await png("assets/store/promotional/marquee-1400x560.png",1400,560,false);

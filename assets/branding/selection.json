@@ -1,8 +1,8 @@
 {
-  "selected": "01",
-  "provisional": true,
-  "bubbleScale": 0.9,
-  "prohibitionStrokeMultiplier": 1.35,
+  "selected": "04",
+  "provisional": false,
+  "bubbleScale": 0.78,
+  "prohibitionStrokeMultiplier": 1.52,
   "palette": [
     "#000000",
     "#FFFFFF",
