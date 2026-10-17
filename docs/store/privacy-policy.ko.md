@@ -2,11 +2,10 @@
 
 시행일: 2026-10-17 · 적용 버전: 0.1.0
 
-> 게시 전 작성: 운영자 공개 이름 `{{PUBLIC_OPERATOR_NAME}}`, 문의 이메일 `{{PUBLIC_SUPPORT_EMAIL}}`. 이 두 값을 채우고 로그인 없이 접근 가능한 HTTPS 주소에 게시한 뒤 Chrome 웹 스토어에 해당 URL을 등록하세요. 비공개 GitHub 저장소 URL은 공개 방침 URL로 사용할 수 없습니다.
 
 ## 1. 목적과 운영자
 
-YouTube Comment Block · 댓글 잠시 멈춤은 유튜브 댓글을 기본으로 가리고 사용자가 현재 영상에서 명시적으로 선택할 때 표시하는 독립적인 브라우저 확장 프로그램입니다. 운영자는 `{{PUBLIC_OPERATOR_NAME}}`이며 YouTube 또는 Google과 제휴·승인 관계가 없습니다.
+YouTube Comment Block · 댓글 잠시 멈춤은 유튜브 댓글을 기본으로 가리고 사용자가 현재 영상에서 명시적으로 선택할 때 표시하는 독립적인 브라우저 확장 프로그램입니다. 운영자는 `Jaeseok Heo (Imjaeseokk)`이며 YouTube 또는 Google과 제휴·승인 관계가 없습니다.
 
 ## 2. 기기에서 일시적으로 처리하는 정보
 
@@ -33,4 +32,8 @@ YouTube Comment Block · 댓글 잠시 멈춤은 유튜브 댓글을 기본으�
 
 ## 6. 변경과 문의
 
-기능 또는 데이터 처리 방식이 바뀌면 버전과 방침을 함께 갱신하고 필요한 경우 추가로 안내합니다. 개인정보 문의: `{{PUBLIC_SUPPORT_EMAIL}}`.
+기능 또는 데이터 처리 방식이 바뀌면 버전과 방침을 함께 갱신하고 필요한 경우 추가로 안내합니다. 개인정보 문의: `kakaokokoa9971@gmail.com`.
+
+## 7. 이 방침 페이지의 호스팅
+
+이 공개 문서는 GitHub Pages에서 제공됩니다. 페이지 접속 시 GitHub가 서비스를 제공하기 위해 접속 정보를 처리할 수 있으며, 이 처리는 [GitHub 개인정보처리방침](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)을 따릅니다. 이 페이지에는 개발자의 별도 분석 도구, 광고, 추적 스크립트 또는 외부 폰트가 없습니다.

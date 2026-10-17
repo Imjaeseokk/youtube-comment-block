@@ -58,7 +58,7 @@ npm run package
 - `npm run assets -- 04`: 01–05 후보 선택 및 PNG·프로모션 재생성. 사용자가 선택한 04를 적용함. 04의 말풍선은 이전 시안보다 약 13% 더 줄이고, 금지 표시 원·사선 굵기는 34에서 38로 약 12% 더 늘렸음. 인수 없이 실행하면 현재 선택을 유지함.
 - `npm run assets:check`: 이미지 형식·규격·알파 채널·투명 여백·로고 구성 검증.
 
-등록 이미지의 UI는 실제 콘텐츠 스크립트를 실행한 로컬 샘플 캡처이며, 실사이트 설치 검증과 구분됩니다. 공개 문의 연락처와 개인정보처리방침 HTTPS URL, 실제 Chrome에서의 YouTube 설치 점검은 제출 전에 필요합니다. 아직 Chrome 웹 스토어에 등록하거나 심사를 신청하지 않았습니다.
+등록 이미지의 UI는 실제 콘텐츠 스크립트를 실행한 로컬 샘플 캡처이며, 실사이트 설치 검증과 구분됩니다. 공개 개인정보처리방침은 [한국어](https://imjaeseokk.github.io/youtube-comment-block/privacy.html)·[영어](https://imjaeseokk.github.io/youtube-comment-block/privacy-en.html)로 제공하며 운영자명과 문의 이메일을 포함합니다. 실제 Chrome에서의 YouTube 설치 점검은 제출 전에 필요합니다. 아직 Chrome 웹 스토어에 등록하거나 심사를 신청하지 않았습니다.
 
 ## 연구 안내의 원칙
 
@@ -86,3 +86,7 @@ npm run package
 - `release/`: 제출용 ZIP, 자료 묶음 및 SHA-256 체크섬
 
 GitHub 저장소: [Imjaeseokk/youtube-comment-block](https://github.com/Imjaeseokk/youtube-comment-block) (비공개). 소스·문서·에셋·제출 ZIP을 함께 관리합니다.
+
+## 개인정보처리방침 배포
+
+원본은 `docs/store/privacy-policy.ko.md`, `privacy-policy.en.md`이며 `python3 scripts/build-privacy-pages.py`로 스크립트·외부 폰트 없는 공개 HTML을 생성합니다. `site/privacy/`의 파일만 별도 공개 저장소 `Imjaeseokk/Imjaeseokk.github.io`의 `youtube-comment-block/` 경로에 배포합니다. 배포 절차는 [GitHub Pages 기록](docs/store/github-pages.md)에 있습니다.

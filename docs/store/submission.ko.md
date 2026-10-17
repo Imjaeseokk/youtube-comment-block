@@ -16,12 +16,15 @@
 | 추가 언어 | 영어 (`extension/_locales/en/messages.json`, `listing.en.md`) |
 | 가격 | 무료. 구독·인앱 구매·광고 없음 |
 | 성인용 콘텐츠 | 아니요. 확장 프로그램 자체의 문구와 이미지는 성인용 콘텐츠를 포함하지 않음 |
-| 홈페이지 | 미정. 비공개 GitHub 저장소 링크를 일반 사용자용 홈페이지로 제출하지 않음 |
-| 지원 URL | 미정. 외부 사용자가 접근 가능한 문의 창구 필요 |
-| 개인정보처리방침 URL | 미정. `privacy-policy.ko.md` 또는 `privacy-policy.en.md`를 로그인 없이 접근 가능한 HTTPS URL에 게시한 뒤 입력 |
+| 홈페이지 | 선택 사항. 별도 제품 홈페이지는 아직 제공하지 않음 |
+| 운영자 | Jaeseok Heo (Imjaeseokk) |
+| 공개 지원 이메일 | kakaokokoa9971@gmail.com |
+| 지원 URL | 선택 사항. 개인정보처리방침 페이지에 공개 문의 이메일 제공 |
+| 개인정보처리방침 URL | https://imjaeseokk.github.io/youtube-comment-block/privacy.html |
+| 영어 개인정보처리방침 URL | https://imjaeseokk.github.io/youtube-comment-block/privacy-en.html |
 | 프로모션 동영상 | 선택 사항. 아직 제작·업로드하지 않음 |
 
-이름과 짧은 설명은 매니페스트 로케일 파일에 반영되어 있습니다. 상세 설명은 `listing.ko.md`를 사용합니다. 공개 문의 이메일은 계정에서 추출한 개인 이메일로 임의 대체하지 않았습니다.
+이름과 짧은 설명은 매니페스트 로케일 파일에 반영되어 있습니다. 상세 설명은 `listing.ko.md`를 사용합니다. 운영자명과 공개 문의 이메일은 기존 공개 GitHub Pages 사이트의 게시자 설정에서 확인한 정보입니다.
 
 ## 2. 개인정보 보호 관행
 
@@ -101,7 +104,7 @@ GitHub 저장소의 비공개 설정과 Chrome 웹 스토어 배포 공개 범�
 
 | 용도 | 파일 |
 | --- | --- |
-| 확장 프로그램 ZIP | `dist/youtube-comment-block-0.1.0.zip` — 루트에 manifest.json 포함 |
+| 확장 프로그램 ZIP | `release/0.1.0/youtube-comment-block-0.1.0.zip` — 루트에 manifest.json 포함, 클론 후 바로 사용 가능 |
 | 스토어 아이콘 | `assets/store/store-icon-128.png` — 128×128, RGBA, 투명 여백 |
 | 스크린샷 5장 | `assets/store/screenshots/01-*.png`부터 `05-*.png` — 1280×800, RGB |
 | 작은 프로모션 이미지 | `assets/store/promotional/small-440x280.png` — 440×280, RGB |
@@ -114,8 +117,8 @@ GitHub 저장소의 비공개 설정과 Chrome 웹 스토어 배포 공개 범�
 ## 6. 제출 전 남은 항목
 
 - 아이콘 04 선택 완료. 말풍선을 더 줄이고 금지 표시를 더 굵게 수정해 적용했고, 다섯 후보를 모두 보관함.
-- 공개 지원 이메일·문의 창구 확정.
-- 개인정보처리방침 문서의 연락처를 채우고, 로그인 없이 열리는 공개 HTTPS URL 확보. 비공개 저장소의 파일 URL은 사용할 수 없음.
+- 공개 지원 이메일과 운영자명 반영 완료. 개인정보처리방침 페이지에서 확인 가능.
+- 개인정보처리방침은 GitHub Pages 공개 HTTPS 주소를 사용. 한국어·영어 모두 제공. 비공개 소스 저장소 주소와 구분함.
 - 실제 Chrome + YouTube에서 `docs/verification.md` 항목 점검. 샘플 화면 검증과 구분.
 - 개발자 계정 등록 상태, 본인·연락처 확인, 필요한 계정 절차를 개발자가 완료.
 - 배포 범위 선택과 최종 제출. 현재 스토어에 업로드하거나 심사를 신청하지 않았음.

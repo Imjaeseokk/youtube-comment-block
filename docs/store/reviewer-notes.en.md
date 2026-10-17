@@ -38,3 +38,12 @@ Shorts, live chat, mobile web and native mobile apps are outside the supported s
 ## Current validation boundary
 
 Automated DOM checks and the local fixture demonstrate the script behavior. The supplied screenshots are visibly labeled local demonstration screens using the actual content scripts. An installed-extension check against live YouTube is still required before final submission.
+
+## Public privacy policy and publisher
+
+- Korean: https://imjaeseokk.github.io/youtube-comment-block/privacy.html
+- English: https://imjaeseokk.github.io/youtube-comment-block/privacy-en.html
+- Publisher: Jaeseok Heo (Imjaeseokk)
+- Support/privacy contact: kakaokokoa9971@gmail.com
+
+The public policy pages are hosted separately from the private extension source repository and explain GitHub Pages hosting in addition to the extension’s local processing.

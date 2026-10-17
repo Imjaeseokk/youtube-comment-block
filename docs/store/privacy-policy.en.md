@@ -2,11 +2,10 @@
 
 Effective: October 17, 2026 · Applies to version 0.1.0
 
-> Before publication, replace `{{PUBLIC_OPERATOR_NAME}}` and `{{PUBLIC_SUPPORT_EMAIL}}` with the operator’s public name and support address. Host the completed policy at an HTTPS URL accessible without signing in. A file URL in a private GitHub repository is not a public privacy-policy URL.
 
 ## Purpose and operator
 
-YouTube Comment Block hides comments until the user explicitly chooses to view them for the current video. It is an independent browser extension operated by `{{PUBLIC_OPERATOR_NAME}}`, not affiliated with or endorsed by YouTube or Google.
+YouTube Comment Block hides comments until the user explicitly chooses to view them for the current video. It is an independent browser extension operated by `Jaeseok Heo (Imjaeseokk)`, not affiliated with or endorsed by YouTube or Google.
 
 ## Information processed temporarily on the device
 
@@ -33,4 +32,8 @@ You can hide comments again or disable/uninstall the extension in Chrome at any 
 
 ## Changes and contact
 
-If functionality or data handling changes, this policy and the extension version will be updated, with additional notice when necessary. Privacy contact: `{{PUBLIC_SUPPORT_EMAIL}}`.
+If functionality or data handling changes, this policy and the extension version will be updated, with additional notice when necessary. Privacy contact: `kakaokokoa9971@gmail.com`.
+
+## Hosting of this policy page
+
+This public document is served by GitHub Pages. GitHub may process connection information to provide the site under its [Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). This page contains no separate developer analytics, advertising, tracking scripts or remote fonts.
