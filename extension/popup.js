@@ -7,5 +7,5 @@
   document.querySelector("body > p").textContent = "YouTube comments stay hidden by default. Choose “Yes, show comments” in the comment area to reveal them for this video only.";
   document.querySelector(".status").replaceChildren(document.createElement("span"), "A fresh pause for the next video");
   document.querySelector(".note").textContent = "Research insights and short questions add a little room to a familiar scrolling habit.";
-  document.querySelector("footer").replaceChildren("YouTube Comment Block · 0.1.0", document.createElement("br"), "No external data transmission · Independent of YouTube");
+  document.querySelector("footer").replaceChildren("YouTube Comment Block · 0.1.1", document.createElement("br"), "No external data transmission · Independent of YouTube");
 })();

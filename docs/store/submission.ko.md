@@ -1,6 +1,6 @@
 # Chrome 웹 스토어 등록 문항과 답변
 
-작성 기준: 2026-10-17 · 확장 프로그램 0.1.0 · 기본 언어 한국어
+작성 기준: 2026-10-18 · 확장 프로그램 0.1.1 · 기본 언어 한국어
 
 현재 구현과 일치하도록 작성한 복사·붙여넣기용 초안입니다. 스토어 대시보드의 최신 항목명이 다르면 의미가 같은 칸에 입력합니다. 실제 등록·심사 제출은 아직 하지 않았습니다.
 
@@ -10,7 +10,7 @@
 | --- | --- |
 | 이름 | YouTube Comment Block |
 | 짧은 설명 | 댓글을 보기 전에 한 번 멈추세요. 영상에 먼저 집중하고, 원할 때만 댓글을 여세요. |
-| 버전 | 0.1.0 |
+| 버전 | 0.1.1 |
 | 카테고리 | Well-being / 웰빙 |
 | 기본 언어 | 한국어 |
 | 추가 언어 | 영어 (`extension/_locales/en/messages.json`, `listing.en.md`) |
@@ -104,7 +104,7 @@ GitHub 저장소의 비공개 설정과 Chrome 웹 스토어 배포 공개 범�
 
 | 용도 | 파일 |
 | --- | --- |
-| 확장 프로그램 ZIP | `release/0.1.0/youtube-comment-block-0.1.0.zip` — 루트에 manifest.json 포함, 클론 후 바로 사용 가능 |
+| 확장 프로그램 ZIP | `release/0.1.1/youtube-comment-block-0.1.1.zip` — 루트에 manifest.json 포함, 클론 후 바로 사용 가능 |
 | 스토어 아이콘 | `assets/store/store-icon-128.png` — 128×128, RGBA, 투명 여백 |
 | 스크린샷 5장 | `assets/store/screenshots/01-*.png`부터 `05-*.png` — 1280×800, RGB |
 | 작은 프로모션 이미지 | `assets/store/promotional/small-440x280.png` — 440×280, RGB |
@@ -130,3 +130,9 @@ GitHub 저장소의 비공개 설정과 Chrome 웹 스토어 배포 공개 범�
 - [개인정보 문항](https://developer.chrome.com/docs/webstore/cws-dashboard-privacy): 단일 목적, 권한 사유, 원격 코드, 데이터 이용 인증.
 - [로컬 데이터 처리 공개 FAQ](https://developer.chrome.com/docs/webstore/program-policies/user-data-faq): 기기 내 처리만 하더라도 공개가 필요하다는 안내. 위 데이터 유형의 권장 선택은 이 원칙을 현재 코드에 적용한 판단임.
 - [카테고리 설명](https://developer.chrome.com/docs/webstore/best-practices): Well-being은 자기계발·마음챙김 등에 해당.
+
+## 패키지를 다시 올릴 때
+
+이미 업로드한 패키지를 교체할 때는 `extension/manifest.json`의 `version`을 이전보다 높이고 다시 패키징한다. 제목·아이콘만 바꿔도 패키지를 다시 업로드하면 버전을 올려야 한다. ZIP 파일명만 바꾸는 것으로는 버전이 바뀌지 않는다. 현재 제출 파일은 `release/0.1.1/youtube-comment-block-0.1.1.zip`이다. `store-kit` ZIP은 자료 묶음이므로 확장 프로그램 패키지 업로드에 사용하지 않는다.
+
+공식 안내: https://developer.chrome.com/docs/webstore/update#upload_an_updated_zip_file

@@ -48,7 +48,7 @@ npm run assets:check
 npm run package
 ```
 
-테스트는 DOM 환경에서 첫 가리기, 명시적 동의, 재차 가리기, 영상 전환·뒤로 가기, 지연 삽입, 측면 패널, 언어 변경을 검증합니다. 배포 ZIP은 `dist/youtube-comment-block-0.1.0.zip`에 생성되며 GitHub에서 받을 수 있도록 `release/0.1.0/`에도 보관합니다. 같은 폴더의 `youtube-comment-block-store-kit-0.1.0.zip`에는 등록 문항·설명·개인정보처리방침 초안·스토어 이미지·아이콘 후보가 함께 들어 있습니다.
+테스트는 DOM 환경에서 첫 가리기, 명시적 동의, 재차 가리기, 영상 전환·뒤로 가기, 지연 삽입, 측면 패널, 언어 변경을 검증합니다. 배포 ZIP은 `dist/youtube-comment-block-0.1.1.zip`에 생성되며 GitHub에서 받을 수 있도록 `release/0.1.1/`에도 보관합니다. 같은 폴더의 `youtube-comment-block-store-kit-0.1.1.zip`에는 등록 문항·설명·개인정보처리방침 초안·스토어 이미지·아이콘 후보가 함께 들어 있습니다.
 
 ## Chrome 웹 스토어 등록 준비
 

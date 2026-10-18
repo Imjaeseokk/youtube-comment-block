@@ -1,6 +1,6 @@
 # Privacy Policy · YouTube Comment Block
 
-Effective: October 17, 2026 · Applies to version 0.1.0
+Effective: October 17, 2026 · Applies to version 0.1.1
 
 
 ## Purpose and operator

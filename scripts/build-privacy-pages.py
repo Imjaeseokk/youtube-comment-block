@@ -54,7 +54,7 @@ def page(language, body):
     ko = language == "ko"
     title = "개인정보처리방침" if ko else "Privacy Policy"
     filename = "privacy.html" if ko else "privacy-en.html"
-    date = "시행일 2026년 10월 17일 · 버전 0.1.0" if ko else "Effective October 17, 2026 · Version 0.1.0"
+    date = "시행일 2026년 10월 17일 · 버전 0.1.1" if ko else "Effective October 17, 2026 · Version 0.1.1"
     summary = "유튜브 댓글을 원할 때만 표시하기 위해 기기 안에서 어떤 정보를 처리하는지 설명합니다." if ko else "How the extension processes information on your device to show comments only when you choose."
     skip = "본문으로 이동" if ko else "Skip to content"
     return f'''<!doctype html>

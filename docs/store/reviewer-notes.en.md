@@ -1,4 +1,4 @@
-# Reviewer notes · 0.1.0
+# Reviewer notes · 0.1.1
 
 ## Single purpose
 
@@ -46,4 +46,4 @@ Automated DOM checks and the local fixture demonstrate the script behavior. The 
 - Publisher: Jaeseok Heo (Imjaeseokk)
 - Support/privacy contact: kakaokokoa9971@gmail.com
 
-The public policy pages are hosted separately from the private extension source repository and explain GitHub Pages hosting in addition to the extension’s local processing.
+The public policy pages are hosted from this public extension repository on GitHub Pages and explain GitHub Pages hosting in addition to the extension’s local processing.
